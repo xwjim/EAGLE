@@ -16,10 +16,10 @@ from fastchat.llm_judge.common import load_questions
 from fastchat.model import get_conversation_template
 from tqdm import tqdm
 
-from model.ea_model import EaModel
-from model.kv_cache import initialize_past_key_values
-from model.utils import *
-from model.choices import *
+from ..model.ea_model import EaModel
+from ..model.kv_cache import initialize_past_key_values
+from ..model.utils import *
+from ..model.choices import *
 
 
 def ea_forward(input_ids, model, tokenizer, tree_choices, logits_processor=None, max_steps=512):
